@@ -40,5 +40,28 @@ test('form submit takes info from inputs', () => {
 	expect(messageInput.value).toBe('Test Message');
 
 	// click on the submit
+
 	fireEvent.click(getByText(/submit/i));
 });
+
+// test('name max length should be 18 chars long', () => {
+// 	// arrange
+// 	const { getByLabelText, getByText } = render(<ContactForm />);
+// 	const fnInput = getByLabelText(/first name/i);
+// 	const errorText = getByText(/Looks like there was an error: required/i);
+
+// 	// act
+// 	// fireEvent.focus(fnInput);
+// 	// fireEvent.blur(fnInput);
+// 	fnInput.focus();
+// 	fnInput.blur();
+
+// 	//assert
+// 	expect(errorText).toBeInTheDocument();
+// });
+
+// test('placeholder text renders', () => {
+//     const { getByPlaceholderText } = render(<ContactForm />);
+//     const
+
+// })
